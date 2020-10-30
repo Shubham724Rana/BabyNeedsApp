@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/pop_up_layout"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/enter_item"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/itemName"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/tittle"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/hint_item" />
+
+            <EditText
+                android:id="@+id/itemQuantity"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:hint="@string/hint_quantity"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/itemColor"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemQuantity"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/hint_color" />
+
+            <EditText
+                android:id="@+id/itemSize"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemColor"
+                android:layout_alignEnd="@+id/itemColor"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="-1dp"
+                android:hint="@string/hint_Size"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="304dp"
+                android:layout_height="57dp"
+                android:layout_below="@+id/itemSize"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Enter"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
